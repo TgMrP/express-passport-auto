@@ -76,7 +76,6 @@ class PassportClass {
           }
 
           const passwordMatch = await bcrypt.compare(password, user.password);
-          console.log(passwordMatch);
           if (!passwordMatch) {
             return done(null, false, {
               message: "Incorrect user/password",
