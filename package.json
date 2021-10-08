@@ -1,0 +1,31 @@
+{
+  "name": "express-passport-auto",
+  "version": "1.0.0",
+  "description": "connect passport to your express app",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TgMrP/express-passport-auto.git"
+  },
+  "keywords": [
+    "passport",
+    "express-passport",
+    "auth",
+    "express-auth"
+  ],
+  "author": "TgMrP",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/TgMrP/express-passport-auto/issues"
+  },
+  "homepage": "https://github.com/TgMrP/express-passport-auto#readme",
+  "dependencies": {
+    "bcrypt": "^5.0.1",
+    "express-session": "^1.17.2",
+    "passport": "^0.5.0",
+    "passport-local": "^1.0.0"
+  }
+}
