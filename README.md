@@ -55,11 +55,6 @@ const mongoStore = new MongoStore({
   mongoUrl: "mongodb://localhost:27017/auth",
 });
 
-// Middleware
-app.engine("hbs", hbs({ extname: ".hbs" }));
-app.set("view engine", "hbs");
-app.use(express.static(__dirname + "/public"));
-app.set("trust proxy", 1);
 app.use(express.urlencoded({ extended: false }));
 app.use(express.json());
 
