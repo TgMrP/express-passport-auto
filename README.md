@@ -40,7 +40,6 @@ const Passport = new PassportClass(app, User, options);
 
 ```
 const express = require("express");
-const hbs = require("express-handlebars");
 const mongoose = require("mongoose");
 const User = require("./models/User");
 const PassportClass = require("express-passport-auto");
@@ -67,6 +66,14 @@ const Passport = new PassportClass(app, User, {
     cookie: { maxAge: 3600000 * 24 * 7 },
   },
 });
+
+app.get("/", Passport.isLoggedIn, (req, res) => {
+    res.end('is logged in')
+  });
+
+  app.get("/login", Passport.isGuest, (req, res) => {
+    res.end('is guest')
+  });
 
 app.listen(3000, () => {
   console.log("Listen on 3000");

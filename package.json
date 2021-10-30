@@ -1,6 +1,6 @@
 {
   "name": "express-passport-auto",
-  "version": "1.0.1-beta.0",
+  "version": "1.0.0-beta.0",
   "description": "connect passport to your express app",
   "main": "index.js",
   "scripts": {
