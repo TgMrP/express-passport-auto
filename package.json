@@ -23,7 +23,7 @@
   },
   "homepage": "https://github.com/TgMrP/express-passport-auto#readme",
   "dependencies": {
-    "bcrypt": "^5.0.1",
+    "bcrypt": "^6.0.0",
     "express-session": "^1.17.2",
     "passport": "^0.5.0",
     "passport-local": "^1.0.0"
